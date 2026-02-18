@@ -1,73 +1,171 @@
-# Welcome to your Lovable project
+# 🎬 Dino Player -- Mobile-First Video Application
 
-## Project info
+A high-performance, gesture-driven video player inspired by the YouTube
+mobile experience.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Built as part of the **Dino Ventures -- Frontend Engineer Assignment**.
 
-## How can I edit this code?
+🌍 **Live Demo:**\
+https://dinoplayer.vercel.app/
 
-There are several ways of editing your application.
+------------------------------------------------------------------------
 
-**Use Lovable**
+## 🚀 Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Dino Player is a mobile-first video streaming interface designed with a
+strong focus on:
 
-Changes made via Lovable will be committed automatically to this repo.
+-   Smooth playback experience\
+-   Gesture-based interactions\
+-   Clean, immersive UI\
+-   High performance rendering\
+-   Seamless state management
 
-**Use your preferred IDE**
+The application integrates the official **YouTube IFrame Player API**
+for reliable playback control and advanced features like seeking and
+auto-play.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+------------------------------------------------------------------------
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Core Features
 
-Follow these steps:
+### 🏠 Home Feed
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+-   Scrollable video grid
+-   Category filter tabs
+-   Responsive layout (2 columns mobile / 4 columns desktop)
+-   Thumbnail previews
+-   Category badges
+-   Dark cinematic theme
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ▶️ Full-Screen Player
 
-# Step 3: Install the necessary dependencies.
-npm i
+-   Smooth slide-up transition
+-   Custom overlay controls
+-   Play / Pause
+-   Seekable progress bar
+-   Real-time time tracking
+-   Minimal clean UI
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### ⏩ Skip Controls (±10 Seconds)
+
+-   +10 seconds forward
+-   -10 seconds backward
+-   Implemented using official `YT.Player` API
+-   Reliable `seekTo()` control
+-   Progress polling at 250ms intervals
+
+### 🧲 Drag-to-Minimize Mini Player
+
+-   Drag down gesture
+-   Persistent docked mini-player
+-   Thumbnail + title
+-   Play / Pause
+-   Close button
+-   Tap to restore full-screen
+-   Framer Motion spring animations
+
+### ⏭ Auto-Play Next
+
+-   3-second countdown
+-   Cancel option
+-   Automatic playback of next related video
+
+------------------------------------------------------------------------
+
+## 🧠 Architecture & Structure
+
+    public/
+      ├── placeholder.svg
+      ├── robots.txt
+
+    src/
+      ├── components/     → UI components
+      ├── contexts/       → Global player state management
+      ├── data/           → Static video dataset
+      ├── hook/           → Custom hooks (YouTube player logic)
+      ├── lib/            → Utility functions
+      ├── pages/          → Page-level components
+      ├── test/           → Testing utilities
+      ├── App.tsx
+      ├── main.tsx
+
+### Key Architectural Decisions
+
+-   Centralized Player Context for global playback state
+-   Custom `useYouTubePlayer` hook for controlled API interaction
+-   Controlled rendering to prevent unnecessary re-renders
+-   Framer Motion for gesture & animation handling
+-   Clear separation of UI, logic, and data layers
+
+------------------------------------------------------------------------
+
+## 🎨 Design System
+
+-   Dark cinematic theme (#111 base)
+-   Red accent color
+-   Tailwind utility-first styling
+-   shadcn-ui components
+-   Mobile-first responsive approach
+-   Smooth spring-based transitions
+
+------------------------------------------------------------------------
+
+## 🛠 Tech Stack
+
+-   Vite
+-   React
+-   TypeScript
+-   Tailwind CSS
+-   shadcn-ui
+-   Framer Motion
+-   YouTube IFrame Player API
+
+------------------------------------------------------------------------
+
+## 📦 Local Setup
+
+### 1️⃣ Clone Repository
+
+git clone https://github.com/RITIKYADAV0070/dinoplayer.git\
+cd dinoplayer
+
+### 2️⃣ Install Dependencies
+
+npm install
+
+### 3️⃣ Run Dev Server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+App runs at: http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+------------------------------------------------------------------------
 
-**Use GitHub Codespaces**
+## 🌍 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Deployed on Vercel\
+Live URL: https://dinoplayer.vercel.app/
 
-## What technologies are used for this project?
+------------------------------------------------------------------------
 
-This project is built with:
+## 📌 Assignment Context
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This application was built as part of the **Dino Ventures -- Frontend
+Engineer assignment**, with emphasis on:
 
-## How can I deploy this project?
+-   UX polish
+-   Performance optimization
+-   Reliable playback control
+-   Gesture fluidity
+-   Clean frontend architecture
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+------------------------------------------------------------------------
 
-## Can I connect a custom domain to my Lovable project?
+## 👨‍💻 Author
 
-Yes, you can!
+**Ritik Rao**\
+Frontend Engineer \| React \| TypeScript
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+GitHub: https://github.com/RITIKYADAV0070\
+LinkedIn: https://www.linkedin.com/in/ritik-yadav-a43167232/
