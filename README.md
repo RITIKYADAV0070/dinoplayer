@@ -126,18 +126,18 @@ auto-play.
 ## 📦 Local Setup
 
 ### 1️⃣ Clone Repository
-
+```
 git clone https://github.com/RITIKYADAV0070/dinoplayer.git\
 cd dinoplayer
-
+```
 ### 2️⃣ Install Dependencies
-
+```
 npm install
-
+```
 ### 3️⃣ Run Dev Server
-
+```
 npm run dev
-
+```
 App runs at: http://localhost:5173
 
 ------------------------------------------------------------------------
