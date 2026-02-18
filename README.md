@@ -164,7 +164,7 @@ Engineer assignment**, with emphasis on:
 
 ## 👨‍💻 Author
 
-**Ritik Rao**\
+**Ritik Yadav**\
 Frontend Engineer \| React \| TypeScript
 
 GitHub: https://github.com/RITIKYADAV0070\
